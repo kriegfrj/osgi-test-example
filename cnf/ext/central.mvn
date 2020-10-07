@@ -1,0 +1,42 @@
+# OSGi
+org.osgi:osgi.annotation:7.0.0
+org.osgi:osgi.core:7.0.0
+org.osgi:org.osgi.service.component.annotations:1.3.0
+org.osgi:org.osgi.util.function:1.1.0
+org.osgi:org.osgi.util.promise:1.1.1
+
+org.osgi:org.osgi.test.assertj.framework:${osgi-test.version}
+org.osgi:org.osgi.test.assertj.promise:${osgi-test.version}
+org.osgi:org.osgi.test.common:${osgi-test.version}
+org.osgi:org.osgi.test.junit5:${osgi-test.version}
+
+# List repository contents using GAV coordinates
+org.assertj:assertj-core:${assertj.version}
+
+# SLF4J
+org.slf4j:slf4j-simple:1.7.25
+org.slf4j:jcl-over-slf4j:1.7.25
+org.slf4j:slf4j-nop:1.7.25
+
+# Mockito
+org.objenesis:objenesis:2.6
+org.mockito:mockito-core:3.3.0
+net.bytebuddy:byte-buddy:1.10.5
+net.bytebuddy:byte-buddy-agent:1.10.5
+
+# JUnit
+org.junit.jupiter:junit-jupiter-api:${junit.jupiter.version}
+org.junit.jupiter:junit-jupiter-engine:${junit.jupiter.version}
+org.junit.jupiter:junit-jupiter-params:${junit.jupiter.version}
+org.junit.platform:junit-platform-commons:${junit.platform.version}
+org.junit.platform:junit-platform-engine:${junit.platform.version}
+org.junit.platform:junit-platform-launcher:${junit.platform.version}
+org.opentest4j:opentest4j:1.2.0
+org.apiguardian:apiguardian-api:1.1.0
+
+# Felix
+org.apache.felix:org.apache.felix.framework:6.0.3
+org.apache.felix:org.apache.felix.gogo.command:1.1.0
+org.apache.felix:org.apache.felix.gogo.runtime:1.0.0
+org.apache.felix:org.apache.felix.gogo.shell:1.1.2
+org.apache.felix:org.apache.felix.scr:2.1.24

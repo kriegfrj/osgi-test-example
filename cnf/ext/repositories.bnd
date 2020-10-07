@@ -1,0 +1,29 @@
+releaserepo:            ${workspace}/dist/bundles
+mavencentral:           https://repo.maven.apache.org/maven2
+
+-plugin.0.Main:\
+    aQute.bnd.repository.maven.provider.MavenBndRepository;\
+        name="Maven Central";\
+        releaseUrl="${mavencentral}";\
+        index="${.}/central.mvn";\
+        readOnly=true,\
+    aQute.bnd.deployer.repository.LocalIndexedRepo; \
+        name="Local";\
+        local="${workspace}/cnf/local",\
+    aQute.bnd.repository.maven.provider.MavenBndRepository;\
+        name="Release";\
+        releaseUrl="${fileuri;${releaserepo}}";\
+        snapshotUrl="${fileuri;${releaserepo}}";\
+        noupdateOnRelease=true
+
+-plugin.9.Baseline:\
+    aQute.bnd.repository.maven.provider.MavenBndRepository;\
+        name="Baseline";\
+        releaseUrl="${mavencentral}";\
+        index="${.}/baseline.mvn";\
+        readOnly=true
+
+#-buildrepo: Local
+-releaserepo: Release
+
+-baselinerepo: Baseline

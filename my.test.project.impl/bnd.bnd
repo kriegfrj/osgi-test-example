@@ -1,0 +1,4 @@
+-include: ${workspace}/cnf/includes/jdt.bnd
+
+-buildpath: org.osgi.service.component.annotations,\
+	my.test.project;version=snapshot

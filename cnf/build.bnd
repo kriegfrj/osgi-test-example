@@ -1,0 +1,35 @@
+########################
+## BUILD SETTINGS ##
+########################
+## Java Compiler Options
+javac.debug:            on
+
+# This build requires newer Bnd features
+-require-bnd: "(version>=5.1.0)"
+
+base.version:           1.0.0
+
+# Uncomment the following line to build the non-snapshot version.
+#-snapshot:
+Bundle-Version:         ${base.version}.${tstamp}-SNAPSHOT
+# Don't baseline Bundle-Version
+-diffignore:            Bundle-Version
+
+Automatic-Module-Name:  ${def;bsn}
+Bundle-Vendor:          OSGi Alliance
+Bundle-Copyright:       Copyright (c) OSGi Alliance (2020) and others. All Rights Reserved.
+SPDX-License-Identifier: (Apache-2.0 OR EPL-2.0)
+Bundle-License:         "${SPDX-License-Identifier}";\
+                        description="This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0, or the Eclipse Public License 2.0.";\
+                        link="https://opensource.org/licenses/Apache-2.0,https://opensource.org/licenses/EPL-2.0"
+Bundle-Developers: \
+    kriegfrj; \
+        email=fr.jkrieg@greekwelfaresa.org.au; \
+        name="Fr Jeremy Krieg"; \
+        organization=Greek Welfare Centre of South Australia; \
+        organizationUrl=https://www.greekwelfaresa.org.au; \
+        roles="architect,developer"; \
+        timezone="Australia/Adelaide"
+
+-reproducible: true
+-noextraheaders: true

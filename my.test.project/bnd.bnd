@@ -1,0 +1,2 @@
+-include: ${workspace}/cnf/includes/jdt.bnd
+Export-Package: my.test.project
